@@ -1,9 +1,9 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Hasib\DataTables;
 
 use Illuminate\Database\Eloquent\Builder;
-use Yajra\DataTables\Exceptions\Exception;
+use Hasib\DataTables\Exceptions\Exception;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOneOrMany;
@@ -133,7 +133,7 @@ class EloquentDataTable extends QueryDataTable
      * @param string $relation
      * @param string $relationColumn
      * @return string
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \Hasib\DataTables\Exceptions\Exception
      */
     protected function joinEagerLoadedColumn($relation, $relationColumn)
     {

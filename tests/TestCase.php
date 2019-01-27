@@ -1,9 +1,9 @@
 <?php
 
-namespace Yajra\DataTables\Tests;
+namespace Hasib\DataTables\Tests;
 
-use Yajra\DataTables\Tests\Models\Role;
-use Yajra\DataTables\Tests\Models\User;
+use Hasib\DataTables\Tests\Models\Role;
+use Hasib\DataTables\Tests\Models\User;
 use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
@@ -111,14 +111,14 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Yajra\DataTables\DataTablesServiceProvider::class,
+            \Hasib\DataTables\DataTablesServiceProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'DataTables' => \Yajra\DataTables\Facades\DataTables::class,
+            'DataTables' => \Hasib\DataTables\Facades\DataTables::class,
         ];
     }
 }

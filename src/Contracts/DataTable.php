@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables\Contracts;
+namespace Hasib\DataTables\Contracts;
 
 interface DataTable
 {

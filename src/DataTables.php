@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Hasib\DataTables;
 
 use Illuminate\Support\Traits\Macroable;
 
@@ -11,14 +11,14 @@ class DataTables
     /**
      * DataTables request object.
      *
-     * @var \Yajra\DataTables\Utilities\Request
+     * @var \Hasib\DataTables\Utilities\Request
      */
     protected $request;
 
     /**
      * HTML builder instance.
      *
-     * @var \Yajra\DataTables\Html\Builder
+     * @var \Hasib\DataTables\Html\Builder
      */
     protected $html;
 
@@ -66,7 +66,7 @@ class DataTables
     /**
      * Get request object.
      *
-     * @return \Yajra\DataTables\Utilities\Request
+     * @return \Hasib\DataTables\Utilities\Request
      */
     public function getRequest()
     {
@@ -76,7 +76,7 @@ class DataTables
     /**
      * Get config instance.
      *
-     * @return \Yajra\DataTables\Utilities\Config
+     * @return \Hasib\DataTables\Utilities\Config
      */
     public function getConfig()
     {
@@ -140,12 +140,12 @@ class DataTables
     /**
      * Get html builder instance.
      *
-     * @return \Yajra\DataTables\Html\Builder
+     * @return \Hasib\DataTables\Html\Builder
      * @throws \Exception
      */
     public function getHtmlBuilder()
     {
-        if (! class_exists('\Yajra\DataTables\Html\Builder')) {
+        if (! class_exists('\Hasib\DataTables\Html\Builder')) {
             throw new \Exception('Please install yajra/laravel-datatables-html to be able to use this function.');
         }
 

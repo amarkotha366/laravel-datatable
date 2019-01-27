@@ -1,15 +1,15 @@
 <?php
 
-namespace Yajra\DataTables\Tests\Integration;
+namespace Hasib\DataTables\Tests\Integration;
 
-use Yajra\DataTables\DataTables;
+use Hasib\DataTables\DataTables;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
-use Yajra\DataTables\QueryDataTable;
-use Yajra\DataTables\Tests\TestCase;
+use Hasib\DataTables\QueryDataTable;
+use Hasib\DataTables\Tests\TestCase;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Yajra\DataTables\Facades\DataTables as DatatablesFacade;
+use Hasib\DataTables\Facades\DataTables as DatatablesFacade;
 
 class QueryDataTableTest extends TestCase
 {

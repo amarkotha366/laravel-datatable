@@ -1,15 +1,15 @@
 <?php
 
-namespace Yajra\DataTables\Tests\Integration;
+namespace Hasib\DataTables\Tests\Integration;
 
-use Yajra\DataTables\DataTables;
+use Hasib\DataTables\DataTables;
 use Illuminate\Http\JsonResponse;
-use Yajra\DataTables\Tests\TestCase;
-use Yajra\DataTables\Tests\Models\User;
-use Yajra\DataTables\ApiResourceDataTable;
+use Hasib\DataTables\Tests\TestCase;
+use Hasib\DataTables\Tests\Models\User;
+use Hasib\DataTables\ApiResourceDataTable;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Yajra\DataTables\Tests\Http\Resources\UserResource;
-use Yajra\DataTables\Facades\DataTables as DatatablesFacade;
+use Hasib\DataTables\Tests\Http\Resources\UserResource;
+use Hasib\DataTables\Facades\DataTables as DatatablesFacade;
 
 class ApiResourceEngineTest extends TestCase
 {

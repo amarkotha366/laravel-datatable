@@ -221,7 +221,7 @@
 - Add `Arrayable` and `Jsonable` interface for a more Laravel like response.
 
 ```php
-use Yajra\DataTables\Facades\DataTables;
+use Hasib\DataTables\Facades\DataTables;
 
 return DataTables::eloquent(User::query())->toJson();
 return DataTables::eloquent(User::query())->toArray();
@@ -231,7 +231,7 @@ return DataTables::eloquent(User::query())->toArray();
 
 ```php
 // using DataTables Factory
-use Yajra\DataTables\DataTables;
+use Hasib\DataTables\DataTables;
 
 return DataTables::of(User::query())->toJson();
 return (new DataTables)->eloquent(User::query())->toJson();
@@ -239,13 +239,13 @@ return (new DataTables)->queryBuilder(DB::table('users'))->toJson();
 return (new DataTables)->collection(User::all())->toJson();
 
 // using DataTable class directly
-use Yajra\DataTables\EloquentDataTable;
+use Hasib\DataTables\EloquentDataTable;
 return (new EloquentDataTable(User::query())->toJson();
 
-use Yajra\DataTables\QueryDataTable;
+use Hasib\DataTables\QueryDataTable;
 return (new QueryDataTable(DB::table('users'))->toJson();
 
-use Yajra\DataTables\CollectionDataTable;
+use Hasib\DataTables\CollectionDataTable;
 return (new CollectionDataTable(User::all())->toJson();
 ```
 
@@ -253,7 +253,7 @@ return (new CollectionDataTable(User::all())->toJson();
 
 ### CHANGED
 
-- Namespace changed from `Yajra\Datatables` to `Yajra\DataTables`.
+- Namespace changed from `Hasib\Datatables` to `Hasib\DataTables`.
 - Rename `Datatables` to `DataTables` class.
 - Rename Facade from `Datatables` to `DataTables` class.
 - Preserve `Eloquent\Builder` when overriding the default ordering of dataTables when using `EloquentEngine`.

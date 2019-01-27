@@ -1,10 +1,10 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Hasib\DataTables;
 
-use Yajra\DataTables\Utilities\Config;
+use Hasib\DataTables\Utilities\Config;
 use Illuminate\Support\ServiceProvider;
-use Yajra\DataTables\Utilities\Request;
+use Hasib\DataTables\Utilities\Request;
 
 class DataTablesServiceProvider extends ServiceProvider
 {

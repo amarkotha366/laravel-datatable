@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables\Utilities;
+namespace Hasib\DataTables\Utilities;
 
 /**
  * @method mixed input($key, $default = null)

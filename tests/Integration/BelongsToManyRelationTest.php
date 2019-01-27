@@ -1,10 +1,10 @@
 <?php
 
-namespace Yajra\DataTables\Tests\Integration;
+namespace Hasib\DataTables\Tests\Integration;
 
-use Yajra\DataTables\DataTables;
-use Yajra\DataTables\Tests\TestCase;
-use Yajra\DataTables\Tests\Models\User;
+use Hasib\DataTables\DataTables;
+use Hasib\DataTables\Tests\TestCase;
+use Hasib\DataTables\Tests\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class BelongsToManyRelationTest extends TestCase

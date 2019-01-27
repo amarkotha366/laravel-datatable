@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Hasib\DataTables;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Hasib\DataTables;
 
 use Illuminate\Support\Str;
 use Illuminate\Database\Query\Builder;
-use Yajra\DataTables\Utilities\Helper;
+use Hasib\DataTables\Utilities\Helper;
 use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 

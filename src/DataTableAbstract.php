@@ -1,17 +1,17 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Hasib\DataTables;
 
 use Illuminate\Support\Str;
 use Psr\Log\LoggerInterface;
 use Illuminate\Http\JsonResponse;
-use Yajra\DataTables\Utilities\Helper;
+use Hasib\DataTables\Utilities\Helper;
 use Illuminate\Support\Traits\Macroable;
-use Yajra\DataTables\Contracts\DataTable;
+use Hasib\DataTables\Contracts\DataTable;
 use Illuminate\Contracts\Support\Jsonable;
-use Yajra\DataTables\Exceptions\Exception;
+use Hasib\DataTables\Exceptions\Exception;
 use Illuminate\Contracts\Support\Arrayable;
-use Yajra\DataTables\Processors\DataProcessor;
+use Hasib\DataTables\Processors\DataProcessor;
 
 /**
  * @method DataTableAbstract setTransformer($transformer)
@@ -27,7 +27,7 @@ abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
     /**
      * DataTables Request object.
      *
-     * @var \Yajra\DataTables\Utilities\Request
+     * @var \Hasib\DataTables\Utilities\Request
      */
     public $request;
 
@@ -133,7 +133,7 @@ abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
     protected $appends = [];
 
     /**
-     * @var \Yajra\DataTables\Utilities\Config
+     * @var \Hasib\DataTables\Utilities\Config
      */
     protected $config;
 
@@ -673,7 +673,7 @@ abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
      */
     protected function transform($results, $processed)
     {
-        if (isset($this->transformer) && class_exists('Yajra\\DataTables\\Transformers\\FractalTransformer')) {
+        if (isset($this->transformer) && class_exists('Hasib\\DataTables\\Transformers\\FractalTransformer')) {
             return app('datatables.transformer')->transform(
                 $results,
                 $this->transformer,
@@ -759,7 +759,7 @@ abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
      *
      * @param \Exception $exception
      * @return \Illuminate\Http\JsonResponse
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \Hasib\DataTables\Exceptions\Exception
      */
     protected function errorResponse(\Exception $exception)
     {

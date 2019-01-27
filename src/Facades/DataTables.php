@@ -1,16 +1,16 @@
 <?php
 
-namespace Yajra\DataTables\Facades;
+namespace Hasib\DataTables\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @mixin \Yajra\DataTables\DataTables
- * @method static \Yajra\DataTables\EloquentDatatable eloquent($builder)
- * @method static \Yajra\DataTables\QueryDataTable query($builder)
- * @method static \Yajra\DataTables\CollectionDataTable collection($collection)
+ * @mixin \Hasib\DataTables\DataTables
+ * @method static \Hasib\DataTables\EloquentDatatable eloquent($builder)
+ * @method static \Hasib\DataTables\QueryDataTable query($builder)
+ * @method static \Hasib\DataTables\CollectionDataTable collection($collection)
  *
- * @see \Yajra\DataTables\DataTables
+ * @see \Hasib\DataTables\DataTables
  */
 class DataTables extends Facade
 {
