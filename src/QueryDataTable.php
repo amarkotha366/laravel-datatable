@@ -167,12 +167,7 @@ class QueryDataTable extends DataTableAbstract
      */
     public function count()
     {
-        $builder = $this->prepareCountQuery();
-        $table   = $this->connection->raw('(' . $builder->toSql() . ') count_row_table');
-
-        return $this->connection->table($table)
-                                ->setBindings($builder->getBindings())
-                                ->count();
+        return $this->prepareCountQuery()->count();
     }
 
     /**
@@ -183,13 +178,6 @@ class QueryDataTable extends DataTableAbstract
     protected function prepareCountQuery()
     {
         $builder = clone $this->query;
-
-        if (! $this->isComplexQuery($builder)) {
-            $row_count = $this->wrap('row_count');
-            $builder->select($this->connection->raw("'1' as {$row_count}"));
-            $builder->setBindings([], 'select');
-        }
-
         return $builder;
     }
 
