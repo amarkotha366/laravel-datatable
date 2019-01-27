@@ -12,6 +12,8 @@
 [![Total Downloads](https://poser.pugx.org/yajra/laravel-datatables-oracle/downloads.png)](https://packagist.org/packages/yajra/laravel-datatables-oracle)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages/yajra/laravel-datatables-oracle)
 
+#This Datatable Made by Arjay Angeles yajra.Here made some change that I need to my project. 
+
 This package is created to handle [server-side](https://www.datatables.net/manual/server-side) works of [DataTables](http://datatables.net) jQuery Plugin via [AJAX option](https://datatables.net/reference/option/ajax) by using Eloquent ORM, Fluent Query Builder or Collection.
 
 ```php
@@ -67,12 +69,12 @@ Register provider and facade on your `config/app.php` file.
 ```php
 'providers' => [
     ...,
-    Yajra\DataTables\DataTablesServiceProvider::class,
+    Hasib\DataTables\DataTablesServiceProvider::class,
 ]
 
 'aliases' => [
     ...,
-    'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+    'DataTables' => Hasib\DataTables\Facades\DataTables::class,
 ]
 ```
 
