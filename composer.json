@@ -1,5 +1,5 @@
 {
-  "name": "yajra/laravel-datatables-oracle",
+  "name": "hasib/laravel-datatables-oracle",
   "description": "jQuery DataTables API for Laravel 4|5",
   "keywords": [
     "laravel",
@@ -9,8 +9,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Arjay Angeles",
-      "email": "aqangeles@gmail.com"
+      "name": "Hashibul Hasan",
+      "email": "amarkotha366@gmail.com"
     }
   ],
   "require": {
@@ -49,10 +49,10 @@
     },
     "laravel": {
       "providers": [
-        "Yajra\\DataTables\\DataTablesServiceProvider"
+        "Hasib\\DataTables\\DataTablesServiceProvider"
       ],
       "aliases": {
-        "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
+        "DataTables": "Hasib\\DataTables\\Facades\\DataTables"
       }
     }
   },
