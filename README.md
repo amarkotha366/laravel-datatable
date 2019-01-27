@@ -80,7 +80,7 @@ Register provider and facade on your `config/app.php` file.
 
 #### Configuration (Optional)
 ```bash
-$ php artisan vendor:publish --provider="Yajra\DataTables\DataTablesServiceProvider"
+$ php artisan vendor:publish --provider="Hasib\DataTables\DataTablesServiceProvider"
 ```
 
 And that's it! Start building out some awesome DataTables!
