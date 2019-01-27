@@ -61,7 +61,7 @@ If you are upgrading from v7.x to v8.x, please see [upgrade guide](https://yajra
 
 ## Quick Installation
 ```bash
-$ composer require yajra/laravel-datatables-oracle:"~8.0"
+$ composer require hasib/laravel-datatables-oracle:"~8.0"
 ```
 
 #### Service Provider & Facade (Optional on Laravel 5.5)
